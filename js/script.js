@@ -17,7 +17,7 @@ function loadd() {
 }
 // 
 async function getMeatPizza() {
-    let res = await fetch("http://my-json-server.typicode.com/vasilisk110/pizzas/meatPizza")
+    let res = await fetch("https://my-json-server.typicode.com/vasilisk110/pizzas/meatPizza")
     const data = await res.json()
     pizzaJson1 = data
     pizzaJson1.map((pizza, index) => {
@@ -72,7 +72,7 @@ async function getMeatPizza() {
 getMeatPizza();
 
 async function getFirmaPizza() {
-    let res = await fetch("http://my-json-server.typicode.com/vasilisk110/pizzas/firmaPizza")
+    let res = await fetch("https://my-json-server.typicode.com/vasilisk110/pizzas/firmaPizza")
     const data = await res.json()
     pizzaJson2 = data
     pizzaJson2.map((pizza, index) => {
@@ -126,7 +126,7 @@ async function getFirmaPizza() {
 getFirmaPizza()
 
 async function getPremiumPizza() {
-    let res = await fetch("http://my-json-server.typicode.com/vasilisk110/pizzas/premiumPizza")
+    let res = await fetch("https://my-json-server.typicode.com/vasilisk110/pizzas/premiumPizza")
     const data = await res.json()
     pizzaJson3 = data
     pizzaJson3.map((pizza, index) => {
@@ -245,7 +245,7 @@ qs(".menu-closer").addEventListener(
 )
 // корзина
 async function updateCart() {
-    let res = await fetch("http://my-json-server.typicode.com/vasilisk110/pizzas/meatPizza")
+    let res = await fetch("https://my-json-server.typicode.com/vasilisk110/pizzas/meatPizza")
     const data = await res.json()
     pizzaJson1 = data
     qs(".menu-openner span").innerHTML = cart.length
