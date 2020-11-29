@@ -55,7 +55,7 @@ async function validateForm() {
         JSON.parse(localStorage.getItem("session")).forEach((element) => {
             pizzas.push(element.Nome)
         })
-        await fetch("https://my-json-server.typicode.com/vasilisk110/pizzas/completedOrders", {
+        await fetch("http://localhost:3000/completedOrders", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
